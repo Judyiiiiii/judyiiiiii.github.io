@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f2ed">
+  <meta name="description" content="Selected projects by Xuewen Wang, an Electronic and Electrical Engineering student at City University of Hong Kong. Hardware, software and useful ideas.">
+  <meta property="og:title" content="Xuewen Wang — A few things I've made">
+  <meta property="og:description" content="From a smart parking prototype to an email opportunity dashboard. Engineering and product explorations by a CityUHK student.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://judyiiiiii.github.io">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="motion.css?v=workbench-2">
+  <link rel="stylesheet" href="workbench.css?v=workbench-2">
+  <title>Xuewen Wang — Selected Work</title>
+  <script src="app.js?v=workbench-2" defer></script>
+  <script src="motion.js?v=workbench-2" defer></script>
+  <script src="workbench.js?v=workbench-2" defer></script>
+</head>
+<body>
+<a class="skip" href="#work" data-i18n="skip">Skip to work</a>
+<header class="site-header">
+  <a class="wordmark" href="#" aria-label="Xuewen Wang, home"><svg class="brand-symbol" viewBox="0 0 70 58" fill="none" aria-hidden="true"><path d="M14 15 46 12 54 42 19 45Z" stroke="currentColor" stroke-width="1.7"/><path d="m11 17 36-7 10 33-38 5" stroke="currentColor" stroke-width=".6"/><path d="m24 22 6 13 6-14 7 12 5-13M7 23l9-1M9 34l8-1m7-26 2 7m12-9 1 7m17 7 8-2m-6 13 9-1M28 46l2 7m11-8 2 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="7" cy="23" r="2.8" fill="var(--paper)" stroke="currentColor"/><circle cx="64" cy="17" r="2.5" fill="var(--paper)" stroke="currentColor"/></svg><span class="brand-name">Xuewen Wang<svg viewBox="0 0 170 12" fill="none" aria-hidden="true"><path d="M3 6Q70 1 165 4M20 9q83-5 132-1" stroke="currentColor" stroke-width="1.1"/></svg></span></a>
+  <nav aria-label="Main navigation">
+    <a href="#work" data-i18n="navWork">Work</a>
+    <a href="#about" data-i18n="navAbout">About</a>
+    <a href="#contact" data-i18n="navContact">Contact ↗</a>
+  </nav>
+  <div class="language" aria-label="Language"><button data-lang="en" aria-pressed="true">EN</button><span>/</span><button data-lang="zh" aria-pressed="false">中文</button></div>
+</header>
+<main>
+  <section class="hero" aria-labelledby="intro-title">
+    <div class="hero-scene">
+      <div class="scene-world">
+        <img class="workshop-illustration" src="assets/pencil-workshop-color.png" alt="" width="1672" height="941" fetchpriority="high" aria-hidden="true">
+        <div class="scene-pins">
+          <button class="scene-object object-parking" data-open="parking" tabindex="-1" aria-label="Open the orange smart-parking sensor project"></button>
+          <button class="scene-object object-mail" data-open="mail" tabindex="-1" aria-label="Open the blue MailPhor laptop project"></button>
+          <button class="scene-object object-edge" data-open="edge" tabindex="-1" aria-label="Open the green EdgeSense oscilloscope project"></button>
+          <button class="ai-notebook" data-open="mail" aria-label="Explore MailPhor, an AI-assisted project"><span class="code-heading"><span aria-hidden="true">&lt;/&gt;</span> <span data-i18n="aiNoteTitle">an idea, a prompt, a prototype.</span></span><code><span class="code-comment"># a little pseudocode</span><br>for email in inbox:<br>&nbsp; card = AI.extract(email)<br>&nbsp; keep_what_matters(card)<span class="code-caret" aria-hidden="true">▏</span></code><span class="ai-flow" aria-hidden="true">idea → prompt → code → test</span><span class="code-tool" data-i18n="aiToolLabel">Built with Codex. Refined by me. ↗</span></button>
+          <button class="scene-hotspot pin-parking" data-open="parking" aria-label="Explore Reliable Smart Parking"><span class="pin-number">01</span><span class="pin-label">Smart Parking<small data-i18n="pinParking">sensors & reliable decisions</small></span></button>
+          <button class="scene-hotspot pin-mail" data-open="mail" aria-label="Explore MailPhor"><span class="pin-number">02</span><span class="pin-label">MailPhor<small data-i18n="pinMail">a quieter kind of inbox</small></span></button>
+          <button class="scene-hotspot pin-edge" data-open="edge" aria-label="Explore EdgeSense Current Monitor"><span class="pin-number">03</span><span class="pin-label">EdgeSense<small data-i18n="pinEdge">finding the signal</small></span></button>
+        </div>
+        <svg class="scene-wave" viewBox="0 0 160 70" fill="none" aria-hidden="true"><path d="M0 39h16l10-20 16 42 15-36 12 14h22l13-30 17 50 12-20h27" stroke="#c16f47" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="tiny-cross">+</span><span data-i18n="eyebrow">CIRCUITS, CODE & CURIOSITY</span></div>
+        <h1 id="intro-title"><span data-i18n="hello">Hi, I'm Xuewen.</span><br><span class="serif" data-i18n="headline" data-scatter>Welcome to<br>my little lab.</span></h1>
+        <p class="hero-description" data-i18n="intro">Electronic & Electrical Engineering<br>at City University of Hong Kong.<br>Learning by making things.</p>
+        <a href="#work" class="sketch-link"><span data-i18n="exploreWork">Take a look around</span><svg viewBox="0 0 75 28" fill="none" aria-hidden="true"><path d="M2 14q29-8 65 0M55 3l14 11-13 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <span class="scene-annotation" data-i18n="sceneHint">psst... the little numbers are clickable.</span>
+      <button class="scene-zoom" aria-pressed="false"><span aria-hidden="true">⊕</span> <span data-i18n="zoomLabel">Look a little closer</span></button>
+      <span class="scene-caption" data-i18n="sceneCaption">AN IMAGINED WORKSHOP · A REAL CURIOSITY</span>
+      <div class="paper-opening" aria-hidden="true"><span></span><span></span></div>
+    </div>
+    <div class="hero-foot"><span><i class="status-dot"></i><span data-i18n="status">OPEN TO TECH & PRODUCT INTERNSHIPS</span></span><span data-i18n="location">HONG KONG · CITYUHK</span><a href="#work" data-i18n="scroll">SCROLL TO THE PROJECTS ↓</a></div>
+  </section>
+
+  <section id="work" class="work-section" aria-labelledby="work-title" data-reveal>
+    <div class="section-heading"><h2 id="work-title" data-i18n="workTitle">A few things I've made<span class="count">(03)</span></h2><span class="hand-note" data-i18n="workNote">a mix of circuits, code & curiosity ↙</span></div>
+    <div class="work-controls">
+      <div class="filters" aria-label="Project categories"><button data-filter="all" aria-pressed="true" data-i18n="all">All work</button><button data-filter="hardware" aria-pressed="false" data-i18n="hardware">Hardware & sensing</button><button data-filter="product" aria-pressed="false" data-i18n="product">Software & product</button></div>
+      <div class="views" aria-label="Project layout"><button data-view="gallery" aria-pressed="true" aria-label="Gallery view">▦</button><button data-view="list" aria-pressed="false" aria-label="List view">☰</button></div>
+    </div>
+    <div class="projects" id="projects"></div>
+    <noscript><p>Please enable JavaScript to explore the interactive project gallery. Source code: <a href="https://github.com/Judyiiiiii/reliable-smart-parking">Reliable Smart Parking</a>, <a href="https://github.com/Judyiiiiii/MailPhor">MailPhor</a>, <a href="https://github.com/Judyiiiiii/EdgeSense-Current-Monitor">EdgeSense</a>.</p></noscript>
+    <div class="work-foot"><span data-i18n="workFoot">Built with curiosity, iteration, and a little help from AI.</span><a href="https://github.com/Judyiiiiii" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+  </section>
+
+  <div class="wire-divider" aria-hidden="true"><svg viewBox="0 0 1200 130" fill="none"><path d="M0 65h180q40 0 40-30t45-20h130l9-12 12 24 12-24 12 24 12-24 9 12h60q55 0 55 42t65 42h72" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M757 84v30m9-30v30m0-15h74q55 0 55-35t55-35h70" stroke="currentColor" stroke-width="1.5"/><path d="m1020 17 31 11-31 13zM1056 16v24m0-12h144" stroke="currentColor" stroke-width="1.5"/><circle cx="267" cy="15" r="4" fill="var(--paper)" stroke="currentColor"/><circle cx="120" cy="65" r="4" fill="var(--paper)" stroke="currentColor"/></svg><span data-i18n="followWire">follow the wire...</span></div>
+
+  <section id="about" class="about-section" aria-labelledby="about-title" data-reveal>
+    <div class="about-marker"><span class="mono" data-i18n="aboutLabel">A LITTLE ABOUT ME</span><div class="about-scrap component-drawing" aria-hidden="true"><img src="assets/circuit-sticker.svg" alt="" width="180" height="180"><span>always a work<br>in progress.</span></div></div>
+    <div class="about-main"><h2 id="about-title" data-i18n="aboutTitle">An engineer in the making.<br>A problem-finder by habit.</h2><p class="about-intro" data-i18n="aboutIntro">I'm Xuewen Wang, a second-year Electronic and Electrical Engineering student at City University of Hong Kong. I enjoy turning an everyday frustration into something I can build, test and improve.</p><p data-i18n="aboutAI">I use Codex to help develop my projects, while shaping requirements, refining the experience and checking how the prototypes behave. I'm looking for a first technical or product-focused internship where I can learn by doing.</p>
+    <dl class="education"><div><dt data-i18n="educationLabel">EDUCATION</dt><dd><span data-i18n="degree">BEng, Electronic and Electrical Engineering</span><small data-i18n="school">City University of Hong Kong · 2025–2029</small></dd></div><div><dt data-i18n="academicLabel">ACADEMIC</dt><dd>3.65 / 4.3 <small>GPA · <span data-i18n="deans">Dean's List, Semester B 2025/26</span></small></dd></div></dl>
+    <div class="toolkit"><span class="mono" data-i18n="toolkitLabel">WORKING WITH</span><p>Python / C++ / MicroPython / Micro:bit / Codex</p></div>
+    <div class="resume-links"><span class="mono" data-i18n="resumeLabel">TAKE A COPY</span><a href="assets/WANG_Xuewen_CV_EN.pdf" download>Résumé · EN ↓</a><a href="assets/WANG_Xuewen_CV_ZH.pdf" download>简历 · 中文 ↓</a></div>
+    </div>
+  </section>
+  <section class="activities-section" aria-labelledby="activities-title" data-reveal><div class="section-heading"><h2 id="activities-title" data-i18n="activitiesTitle">Away from the screen</h2><span class="mono">2026</span></div><div id="activities"></div></section>
+
+  <footer id="contact"><div class="contact-top"><span class="mono" data-i18n="contactLabel">HAVE SOMETHING IN MIND?</span><a href="mailto:xuewwang8-c@my.cityu.edu.hk" class="contact-link"><span data-i18n="contactTitle">Let's figure it out.</span><span class="contact-arrow">↗</span></a><a class="email" href="mailto:xuewwang8-c@my.cityu.edu.hk">xuewwang8-c@my.cityu.edu.hk ↗</a></div><div class="footer-bottom"><span>© 2026 <span data-i18n="name">Xuewen Wang</span></span><span data-i18n="footerNote">Made with care. Still learning.</span><a href="#" data-i18n="backTop">BACK TO TOP ↑</a></div></footer>
+</main>
+<dialog aria-labelledby="project-title" id="project-dialog"><div class="dialog-toolbar"><span class="mono" data-i18n="caseLabel">PROJECT NOTES</span><button data-close aria-label="Close project details">×</button></div><div id="project-detail"></div></dialog>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Xuewen Wang","alternateName":"王雪文","url":"https://judyiiiiii.github.io","sameAs":["https://github.com/Judyiiiiii"],"affiliation":{"@type":"CollegeOrUniversity","name":"City University of Hong Kong"}}</script>
+</body>
+</html>
